@@ -10,7 +10,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'https://chat-react-socketio-delta.vercel.app/',
+    origin: '*',
   },
 });
 
